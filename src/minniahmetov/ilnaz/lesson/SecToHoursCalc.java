@@ -1,8 +1,6 @@
-package minniahmetov.ilnaz.lesson;
-
-public class SecToHoursCalc {
-    public String calc(int value) {
-        String result = null;
-        return result;
+ public class SecToHoursCalc {
+    public Double calc(Double value) {
+        double sec = 0;
+        return sec / 3600;
     }
-}
+ }
