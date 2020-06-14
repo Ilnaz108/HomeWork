@@ -3,10 +3,8 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        GasolineCalc gasolineCalc = new GasolineCalc();
-        NdflCacl ndflCacl = new NdflCacl();
-        SecToHoursCalc secToHoursCalc = new SecToHoursCalc();
-        System.out.println("Выберите программу:\n" +
+
+            System.out.println("Выберите программу:\n" +
                 "1 - Бензин\n" +
                 "2 - НДФЛ\n" +
                 "3 - Секунда в часы\n");
@@ -15,20 +13,25 @@ public class Main {
         switch (type) {
             case 1: {
                 System.out.println("Введите количество литров");
-                double litrs = scanner.nextInt();
-                gasolineCalc.calc(litrs);
+                double litrs = scanner.nextDouble();
+                double price = 43;
+                System.out.println(litrs * price);
             }
             break;
             case 2: {
                 System.out.println("Введите зарплату");
                 double salary = scanner.nextDouble();
-                ndflCacl.calc(salary);
+                double tax = 0.87;
+                System.out.println(salary * tax);
+
             }
             break;
             case 3: {
                 System.out.println("Введите количество секунд");
-                double sec = scanner.nextDouble();
-                secToHoursCalc.calc(sec);
+                double user = scanner.nextDouble();
+                int seconds = 3600;
+                System.out.println(user / seconds);
+
             }
             break;
             default: {
